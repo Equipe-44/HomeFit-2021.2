@@ -5,7 +5,7 @@ const generateToken = require('../controllers/authController');
 const router = express.Router();
 const User = require('../models/user');
 
-const authMiddleware = require('../middlewares/auth');
+// const authMiddleware = require('../middlewares/auth');
 
 
 // *********** MAIN ***********
