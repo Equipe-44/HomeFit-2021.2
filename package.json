@@ -1,6 +1,9 @@
 {
   "name": "homefit-2021.2",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
