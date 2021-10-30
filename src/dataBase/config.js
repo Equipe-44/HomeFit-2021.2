@@ -7,7 +7,9 @@ mongoose.connect(
   {
     useNewUrlParser: true
   }
-);
+).then(() => console.log('MongoDB connected...'))
+.catch(err => console.log(err));
+
 mongoose.Promise = global.Promise;
 
 module.exports = mongoose;
