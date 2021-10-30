@@ -10,8 +10,8 @@ const router = express.Router();
 // const express = require('express');
 // const router = express.Router();
 
-const User = require('../../models/user');
-const generateToken = require('../../controllers/authController');
+const User = require('../models/user');
+const generateToken = require('../controllers/authController');
 
 router.post('/register', async (req, res) => {
 
