@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const mongoose = require('mongoose');
 
+// function connectToDatabase() {
+
 mongoose.connect(
   process.env.MONGO_URL,
   {
@@ -13,4 +15,6 @@ mongoose.connect(
 
 mongoose.Promise = global.Promise;
 
+// }
 module.exports = mongoose;
+// module.exports = app => app.use(mongoose);
