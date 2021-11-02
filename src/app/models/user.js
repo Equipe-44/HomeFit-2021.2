@@ -49,7 +49,7 @@ UserSchema.pre('save', async function(next) {
 });
 
 UserSchema.pre('save', async function(next) {
-    var calc = this.peso / (this.altura * this.altura);
+    var calc = this.weight / (this.height * this.height);
     this.imc = calc;
  
     next();
