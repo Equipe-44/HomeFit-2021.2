@@ -16,7 +16,7 @@ router.post('/register', async (req, res) => {
        
      } else {
  
-      const user = await User.insertOne(req.body);
+      const user = await User.create(req.body);
       user.password = undefined;
  
       return res.send({ 
