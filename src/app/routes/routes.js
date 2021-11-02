@@ -3,16 +3,14 @@ const express = require('express');
 const router = express.Router();
 
 
-// *********** CADASTRO ***********
+// *********** User ***********
 
 require('./user/register')(router);
-
-// *********** LOGIN ***********
 
 require('./user/login')(router);
 
 
-// *********** HOME ***********
+// *********** Workouts ***********
 
 require('./workouts/home')(router);
 
